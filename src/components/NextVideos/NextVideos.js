@@ -1,15 +1,15 @@
 import videoDetails from '../../data/video-details.json'
-import './Comments.scss';
+import './NextVideos.scss';
 
 
-const Comments = () => {
+const NextVideos = () => {
     return (
         <>
-            <div className= 'comments__container'>
+            <div className= 'next-videos__container'>
                 <h2>test</h2>
             </div>
         </>
     )
 }
 
-export default Comments;
+export default NextVideos;
