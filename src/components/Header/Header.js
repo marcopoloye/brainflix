@@ -7,9 +7,9 @@ function Header() {
         <>
             <img src={logo} alt='BrainFlix logo' class='header__logo'/>
             <form class='header__search'>
-                <input type='text' name='search' placeholder='Search' class='header__search-bar'></input>
+                <input type='text' name='search' placeholder='Search' className='header__search-bar'></input>
             </form>
-            <img src={avatar} alt='user avatar' class='header__avatar' />
+            <img src={avatar} alt='user avatar' className='header__avatar' />
             <button type='submit'>Upload</button>
         </>
     )
