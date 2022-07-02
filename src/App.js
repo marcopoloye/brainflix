@@ -2,36 +2,40 @@ import React from 'react';
 import './App.scss'
 import Header from '../src/components/Header/Header';
 import MainVideo from '../src/components/MainVideo/MainVideo';
-import MainVideoData from '../src/components/MainVideoData/MainVideoData';
+import MainVideoDetails from './components/MainVideoDetails/MainVideoDetails';
 import Form from '../src/components/Form/Form';
 import Comments from '../src/components/Comments/Comments';
-import NextVideos from '../src/components/NextVideos/NextVideos';
-import NextVideosList from './data/videos.json'
-import videoDetails from './data/video-details.json'
-
-
+import NextVideoList from './components/NextVideoList/NextVideoList';
+import nextVideoData from './data/videos.json'
+import videoData from './data/video-details.json'
 
 
 class App extends React.Component {
   state = {
-    selectedVideo: videoDetails[0],
-    videoList: NextVideosList,
+    selectedVideo: videoData[0],
+    videoList: nextVideoData,
   }
 
-  render () {
+  handleVideoSelect = id => {
+    this.setState({selectedVideo: videoData.find(video=>video.id === id)})
+  }
 
+  render() {
 
+    const filteredVideos = this.state.videoList.filter( video => video.id !== this.state.selectedVideo.id )
     return (
-      <body>
+      <>
         <header className= 'header'>
           <Header/>
         </header>
         <MainVideo />
-        <MainVideoData />
+        <MainVideoDetails selectedVideo={this.state.selectedVideo}/>
         <Form />
         <Comments />
-        <NextVideos />
-      </body>
+        <NextVideoList nextVideoData={filteredVideos} handleVideoSelect={this.handleVideoSelect} />
+      </>
     )
   }
 }
+
+export default App;

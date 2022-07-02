@@ -4,7 +4,7 @@ import './MainVideo.scss';
 const MainVideo = () => {
     return (
         <>
-            <img src= {videoDetails[0].image} className= 'main-video'/>
+            <img src= {videoDetails[0].image} alt='two cyclists' className= 'main-video'/>
         </>
 
     )
