@@ -30,7 +30,7 @@ class App extends React.Component {
         </header>
         <MainVideo selectedVideo={this.state.selectedVideo} />
         <MainVideoDetails selectedVideo={this.state.selectedVideo}/>
-        <Form />
+        <Form selectedVideo={this.state.selectedVideo}/>
         <Comments />
         <NextVideoList nextVideoData={filteredVideos} handleVideoSelect={this.handleVideoSelect} />
       </>
