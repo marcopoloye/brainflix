@@ -1,4 +1,4 @@
-import videoDetails from '../../data/video-details.json'
+import avatar from '../../assets/images/Mohan-muruge.jpg';
 import './Form.scss';
 
 
@@ -6,7 +6,13 @@ const Form = () => {
     return (
         <>
             <div className= 'form__container'>
-                <h2>test</h2>
+                <form>
+                    <input type='text' placeholder='Add a new comment'/>
+                    <button type='submit'>Comment</button>
+                </form>
+                <div>
+                    <img className='form__avatar' src={avatar}/>
+                </div>
             </div>
         </>
     )

@@ -6,7 +6,6 @@ const MainVideo = (props) => {
         <>
             <video poster= {props.selectedVideo.image} alt='two cyclists' className= 'main-video'/>
         </>
-
     )
 }
 
