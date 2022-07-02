@@ -1,3 +1,6 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
 .main-video {
     height: auto;
     width: 100%;

@@ -1,16 +1,42 @@
 import React from 'react';
-import videoData from '../../data/video-details.json';
+import views from '../../assets/icons/views.svg';
+import heart from '../../assets/icons/likes.svg';
 import './MainVideoDetails.scss';
 
 const MainVideoDetails = (props) => {
+    const timestamp = props.selectedVideo.timestamp;
+    const betterDate = new Date(timestamp);
+    const bestDate = (betterDate.getMonth()+1) + '/' + betterDate.getDate() + '/' + betterDate.getFullYear();
+
     return (
         <>
             <div className='main-video-details__container'>
-                <h2 className='main-video-details__header'>{props.selectedVideo.title}</h2>
-                <p>By {props.selectedVideo.channel}</p>
-                <p>{props.selectedVideo.description}</p>
-                <p>views: {props.selectedVideo.views}</p>
-                <p>likes: {props.selectedVideo.likes}</p>
+                <h2 className='main-video-details__title'>
+                    {props.selectedVideo.title}
+                </h2>
+                <div className='main-video-details__stats'>
+                    <div className='main-video-details__channel-date'>
+                        <p className='main-video-details__channel'>
+                            By {props.selectedVideo.channel}
+                        </p>
+                        <p className='main-video-details__date'>
+                            {bestDate}
+                        </p>
+                    </div>
+                    <div className='main-video-details__views-likes'>
+                        <p className='main-video-details__views'>
+                            <img className='main-video-details__icon-views' src={views}/> {props.selectedVideo.views}
+                        </p>
+                        <p className='main-video-details__likes'>
+                            <img className='main-video-details__icon-heart' src={heart}/> {props.selectedVideo.likes}
+                        </p>
+                    </div>
+                </div>
+                <div className='main-video-details__description-container'>
+                    <p className='main-video-details__description'>
+                        {props.selectedVideo.description}
+                    </p>
+                </div>
             </div>
         </>
 

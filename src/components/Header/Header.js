@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../../assets/logo/BrainFlix-logo.svg';
-import avatar from '../../assets/images/Mohan-muruge.jpg';
 import magnifyingGlass from '../../assets/icons/search.svg';
 import './Header.scss';
 

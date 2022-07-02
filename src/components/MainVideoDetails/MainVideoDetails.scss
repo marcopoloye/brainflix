@@ -1,3 +1,49 @@
-.main-video-details__container {
-    margin: 1rem;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+.main-video-details {
+    &__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 0;
+    }
+    &__container {
+        margin: 0 1rem;
+    }
+    &__stats{
+        display: flex;
+        font-size: .75rem;
+        padding: 1rem 0 0;
+        border-top: 1px #e1e1e1 solid;
+        border-bottom: 1px #e1e1e1 solid;
+    }
+    &__channel-date {
+        margin-right: 5rem;
+    }
+    &__channel {
+        font-weight: 700;
+        padding-bottom: 1rem;
+    }
+    &__icon-heart {
+        width: 20%;
+        padding-right: .5rem;
+    }
+    &__icon-views {
+        width: 25%;
+        padding-right: .5rem;
+    }
+    &__likes, &__views {
+        display: flex;
+        align-items: center;
+    }
+    &__date, &__likes, &__views {
+        color: #afafaf;
+        padding-bottom: .75rem;
+    }
+    &__description {
+        padding: 1rem 0;
+        font-size: .75rem;
+        line-height: 1.15rem;
+    }
 }

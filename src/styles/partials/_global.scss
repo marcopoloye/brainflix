@@ -3,16 +3,20 @@
 @font-face {
     font-family: 'Avenir-Regular';
     src: url('../../assets/fonts/AvenirNextLTPro-Regular.otf');
-    font-weight: 400;
+    font-weight: 400, 700;
 }
 
-@font-face {
-    font-family: 'Avenir-Bold';
-    src: url('../../assets/fonts/AvenirNextLTPro-Bold.otf');
-    font-weight: 600;
-}
 
 body {
     margin: 0;
     font: 1rem 'Avenir-Regular';
+    color: #323232;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
