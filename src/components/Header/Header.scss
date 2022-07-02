@@ -1,4 +1,49 @@
-.header__avatar {
-    height: auto;
-    width: 5rem;
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    
+    &__logo {
+        margin: 0 auto;
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &-bar {
+        width: 80%;
+        padding: .5rem;
+        background: #fafafa;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        margin: 1rem 1rem 1rem 0;
+        }
+        ::placeholder {
+            color: black;
+            font-size: .75rem;
+        }
+    }
+    &__avatar {
+        height: 2.25rem;
+        width: 2.25rem;
+        border-radius: 50%;
+        background: url('../../assets/images/Mohan-muruge.jpg');
+        background-size: cover;
+    }
+    &__button {
+        color: white;
+        background: #0095ff;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        padding: .75rem 0;
+        font-size: .75rem;
+    }
 }
+
+
+
+

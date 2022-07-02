@@ -24,7 +24,7 @@ class App extends React.Component {
     const filteredVideos = this.state.videoList.filter( video => video.id !== this.state.selectedVideo.id )
     return (
       <>
-        <header className= 'header'>
+        <header className='header'>
           <Header/>
         </header>
         <MainVideo selectedVideo={this.state.selectedVideo} />
