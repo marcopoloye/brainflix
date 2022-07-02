@@ -6,7 +6,7 @@ const NextVideoList = ({nextVideoData, handleVideoSelect}) => {
     return (
         <div>
             {
-                nextVideoData.map(video => <NextVideo video={video} handleVideoSelect = {handleVideoSelect}/>)
+                nextVideoData.map(video => <NextVideo video = {video} handleVideoSelect = {handleVideoSelect}/>)
             }
         </div>
     )

@@ -16,8 +16,8 @@ class App extends React.Component {
     videoList: nextVideoData,
   }
 
-  handleVideoSelect = id => {
-    this.setState({selectedVideo: videoData.find(video=>video.id === id)})
+  handleVideoSelect = (id) => {
+    this.setState({selectedVideo: videoData.find(video => video.id === id)})
   }
 
   render() {
@@ -28,7 +28,7 @@ class App extends React.Component {
         <header className= 'header'>
           <Header/>
         </header>
-        <MainVideo />
+        <MainVideo selectedVideo={this.state.selectedVideo} />
         <MainVideoDetails selectedVideo={this.state.selectedVideo}/>
         <Form />
         <Comments />
