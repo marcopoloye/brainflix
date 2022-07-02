@@ -3,6 +3,7 @@ import './NextVideo.scss';
 
 
 const NextVideo = ({video, handleVideoSelect}) => {
+    
     const handleClick = () => {
         handleVideoSelect(video.id)
     }
@@ -10,7 +11,7 @@ const NextVideo = ({video, handleVideoSelect}) => {
         <div className='next-video__container'>
             <h2>{video.title}</h2>
             <p>{video.channel}</p>
-            <img onClick={handleClick} src={video.image}/>
+            <img onClick={handleClick} src={video.image} alt='video thumbnail'/>
         </div>
     )
 }

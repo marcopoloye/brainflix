@@ -1,14 +1,15 @@
-import videoDetails from '../../data/video-details.json'
+import React from 'react';
 import './Comments.scss';
 
 
-const Comments = () => {
+const Comments = ({postedComment}) => {
+    console.log(postedComment)
     return (
-        <>
-            <div className= 'comments__container'>
-                <h2>test</h2>
-            </div>
-        </>
+        <div>
+            <p>{postedComment.name}</p>
+            <p>{postedComment.comment}</p>
+            <p>{postedComment.timestamp}</p>
+        </div>
     )
 }
 

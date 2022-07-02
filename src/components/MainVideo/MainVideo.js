@@ -4,7 +4,7 @@ import './MainVideo.scss';
 const MainVideo = (props) => {
     return (
         <>
-            <video poster= {props.selectedVideo.image} alt='two cyclists' className= 'main-video'/>
+            <video poster= {props.selectedVideo.image} className= 'main-video'/>
         </>
     )
 }

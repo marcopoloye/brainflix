@@ -15,7 +15,6 @@ const Form = (props) => {
                     <input type='text' placeholder='Add a new comment'/>
                     <button type='submit'>Comment</button>
                 </form>
-
             </div>
         </>
     )
