@@ -1,6 +1,4 @@
 import React from 'react';
-import views from '../../assets/icons/views.svg';
-import heart from '../../assets/icons/likes.svg';
 import './MainVideoDetails.scss';
 
 const MainVideoDetails = (props) => {
@@ -22,10 +20,10 @@ const MainVideoDetails = (props) => {
                     </div>
                     <div className='main-video-details__views-likes'>
                         <p className='main-video-details__views'>
-                            <img className='main-video-details__icon-views' src={views}/> {props.selectedVideo.views}
+                            {props.selectedVideo.views}
                         </p>
                         <p className='main-video-details__likes'>
-                            <img className='main-video-details__icon-heart' src={heart}/> {props.selectedVideo.likes}
+                            {props.selectedVideo.likes}
                         </p>
                     </div>
                 </div>

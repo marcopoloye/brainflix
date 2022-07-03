@@ -2,7 +2,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .form {
-    padding: 0 1rem;
+    margin: 0 1rem;
 
     &__container {
         display: flex;
@@ -34,6 +34,7 @@
     ::placeholder {
         color: black;
         font-size: .75rem;
+        font-family: 'Avenir-Regular';
     }
     &__section {
         display: flex;
@@ -46,14 +47,49 @@
         font-weight: 700;
         color: #afafaf;
         padding-bottom: .25rem;
+        padding-left: 3.25rem;
     }
     &__button {
         color: white;
-        background: #0095ff;
+        background: url('../../assets/icons/add_comment.svg') no-repeat;
+        background-color: #0095ff;
+        background-position: 4% 50%;
+        background-size: 1.15rem;
         border: none;
-        border-radius: 5px;
+        border-radius: 4px;
         text-transform: uppercase;
         padding: .65rem 0;
         font-size: .75rem;
+    }
+    @include tablet {
+        padding: 0 2.25rem;
+        &__container {
+            align-items: flex-end;
+            padding-bottom: 1.5rem;
+        }
+        &__avatar {
+            margin: 0;
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+
+        &__comment-count {
+            font-family: 'Avenir-Bold';
+            font-size: .875rem;
+            padding-bottom: 1.25rem;
+        }
+        &__section {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 92%;
+        }
+        &__input {
+            padding: .5rem .75rem .5rem .75rem;
+            background: #fafafa;
+            border: 1px solid #e1e1e1;
+            border-radius: 4px;
+            margin-bottom: 0rem;
+            max-width: 100%;
+        }
     }
 }

@@ -6,14 +6,13 @@
     &__title {
         font-size: 1.5rem;
         line-height: 2rem;
-        padding: .75rem 0;
+        padding: 1.5rem 0 1rem;
     }
     &__container {
         margin: 0 1rem;
     }
     &__stats{
         display: flex;
-        font-size: .75rem;
         padding: 1rem 0 0;
         border-top: 1px #e1e1e1 solid;
         border-bottom: 1px #e1e1e1 solid;
@@ -23,7 +22,7 @@
     }
     &__channel {
         font-weight: 700;
-        padding-bottom: 1rem;
+        padding-bottom: .9rem;
     }
     &__icon-heart {
         width: 20%;
@@ -36,8 +35,20 @@
     &__likes, &__views {
         display: flex;
         align-items: center;
+        color: #afafaf;
     }
-    &__date, &__likes, &__views {
+    &__likes {
+        background: url(../../assets/icons/likes.svg) no-repeat;
+        background-size: 1rem;
+        padding-left: 1.5rem;
+    }
+    &__views {
+        background: url(../../assets/icons/views.svg) no-repeat;
+        background-size: 1.35rem;
+        padding-left: 1.7rem;
+        padding-bottom: .9rem;
+    }
+    &__date {
         color: #afafaf;
         padding-bottom: .75rem;
     }
@@ -45,5 +56,37 @@
         padding: 1rem 0;
         font-size: .8125rem;
         line-height: 1.15rem;
+    }
+    @include tablet {
+        &__container {
+            margin: 0 2.25rem;
+        }
+        &__title {
+            font-family: 'Avenir-Bold';
+            font-size: 2.05rem;
+            line-height: 2rem;
+            padding: 2.25rem 0 1.5rem;
+        }
+        &__stats {
+            border-top: none;
+            padding: 0 0 .75rem;
+            justify-content: space-between;
+            font-size: .875rem;
+        }
+        &__channel-date, &__views-likes {
+            display: flex;
+        }
+        &__views, &__likes, &__channel, &__date {
+            padding-bottom: 0rem;
+        }
+        &__channel, &__views {
+            padding-right: 2rem;
+        }
+        &__channel {
+            font-family: 'Avenir-Bold'
+        }
+        &__description {
+            font-size: .875rem;
+        }
     }
 }

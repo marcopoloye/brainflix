@@ -2,9 +2,8 @@
 @use '../../styles/partials/mixins' as *;
 
 .next-video {
-
     &__container {
-        padding: 1rem 1rem 0;
+        margin: 1rem 1rem 0;
         display: flex;
         height: 3.75rem;
     }
@@ -18,7 +17,7 @@
     &__thumbnail {
         height: 3.75rem;
         width: 6.25rem;
-        border-radius: 5px;
+        border-radius: 4px;
         object-fit: cover;
         margin-right: 1rem;
     }

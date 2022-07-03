@@ -4,4 +4,17 @@
 .main-video {
     height: auto;
     width: 100%;
+    @include tablet {
+        width: 696px;
+    }
+}
+.main-video__controls-play {
+    height: 5rem;
+    width: 5rem;
+    background: green;
+}
+.main-video__container {
+    background: black;
+    display: flex;
+    justify-content: center;
 }

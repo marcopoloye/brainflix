@@ -6,6 +6,7 @@ import MainVideoDetails from './components/MainVideoDetails/MainVideoDetails';
 import Form from '../src/components/Form/Form';
 import CommentsList from '../src/components/CommentsList/CommentsList';
 import NextVideoList from './components/NextVideoList/NextVideoList';
+import NextVideoHeading from './components/NextVideoHeading/NextVideoHeading';
 import nextVideoData from './data/videos.json'
 import videoData from './data/video-details.json'
 
@@ -37,6 +38,7 @@ class App extends React.Component {
         <MainVideoDetails selectedVideo={this.state.selectedVideo} bestDate={bestDate}/>
         <Form selectedVideo={this.state.selectedVideo}/>
         <CommentsList selectedVideo={this.state.selectedVideo.comments}/>
+        <NextVideoHeading/>
         <NextVideoList nextVideoData={filteredVideos} handleVideoSelect={this.handleVideoSelect} />
       </>
     )

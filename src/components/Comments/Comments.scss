@@ -4,7 +4,7 @@
 .comments {
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    margin: 0 1rem;
     font-size: .8125rem;
     border-bottom: 1px #e1e1e1 solid;
     &__avatar {
@@ -32,5 +32,11 @@
     &__comment {
         padding-bottom: .5rem;
         line-height: 1.15rem;
+    }
+    @include tablet {
+        &__avatar {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
     }
 }
