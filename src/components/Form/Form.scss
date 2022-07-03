@@ -24,7 +24,7 @@
         background-size: cover;
     }
     &__input {
-        padding: .5rem .75rem 5rem .75rem;
+        padding: .6rem;
         background: #fafafa;
         border: 1px solid #e1e1e1;
         border-radius: 4px;
@@ -62,7 +62,10 @@
         font-size: .75rem;
     }
     @include tablet {
-        padding: 0 2.25rem;
+        margin: 0 2.25rem;
+        &__title {
+            padding-left: 3.5rem;
+        }
         &__container {
             align-items: flex-end;
             padding-bottom: 1.5rem;
@@ -84,12 +87,17 @@
             width: 92%;
         }
         &__input {
-            padding: .5rem .75rem .5rem .75rem;
+            padding: .75rem;
             background: #fafafa;
             border: 1px solid #e1e1e1;
             border-radius: 4px;
             margin-bottom: 0rem;
-            max-width: 100%;
+            width: 100%;
+        }
+        &__button {
+            width: 40%;
+            margin-left: 1.5rem;
+            background-position: 6% 50%;
         }
     }
 }
