@@ -4,9 +4,6 @@ import heart from '../../assets/icons/likes.svg';
 import './MainVideoDetails.scss';
 
 const MainVideoDetails = (props) => {
-    const timestamp = props.selectedVideo.timestamp;
-    const betterDate = new Date(timestamp);
-    const bestDate = (betterDate.getMonth()+1) + '/' + betterDate.getDate() + '/' + betterDate.getFullYear();
 
     return (
         <>
@@ -20,7 +17,7 @@ const MainVideoDetails = (props) => {
                             By {props.selectedVideo.channel}
                         </p>
                         <p className='main-video-details__date'>
-                            {bestDate}
+                            {props.bestDate}
                         </p>
                     </div>
                     <div className='main-video-details__views-likes'>

@@ -1,0 +1,36 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.comments {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-size: .75rem;
+    border-bottom: 1px #e1e1e1 solid;
+    &__avatar {
+        margin: .75rem 0;
+        height: 2.25rem;
+        width: 2.25rem;
+        border-radius: 50%;
+        background: #e1e1e1;
+        background-size: cover;
+    }
+    &__text-container {
+        width: 82%;
+    }
+    &__name-date {
+        display: flex;
+        justify-content: space-between;
+        padding: .75rem 0 .5rem;
+    }
+    &__name {
+        font-weight: 700;
+    }
+    &__date {
+        color: #afafaf;
+    }
+    &__comment {
+        padding-bottom: .5rem;
+        line-height: 1.15rem;
+    }
+}

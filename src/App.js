@@ -19,16 +19,22 @@ class App extends React.Component {
   handleVideoSelect = (id) => {
     this.setState({selectedVideo: videoData.find(video => video.id === id)})
   }
-
+  
   render() {
     const filteredVideos = this.state.videoList.filter( video => video.id !== this.state.selectedVideo.id )
+
+    const timestamp = this.state.selectedVideo.timestamp;
+    const betterDate = new Date(timestamp);
+    const bestDate = (betterDate.getMonth()+1) + '/' + betterDate.getDate() + '/' + betterDate.getFullYear();
+    console.log(bestDate)
+
     return (
       <>
         <header className='header'>
           <Header/>
         </header>
         <MainVideo selectedVideo={this.state.selectedVideo} />
-        <MainVideoDetails selectedVideo={this.state.selectedVideo}/>
+        <MainVideoDetails selectedVideo={this.state.selectedVideo} bestDate={bestDate}/>
         <Form selectedVideo={this.state.selectedVideo}/>
         <CommentsList selectedVideo={this.state.selectedVideo.comments}/>
         <NextVideoList nextVideoData={filteredVideos} handleVideoSelect={this.handleVideoSelect} />
