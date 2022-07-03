@@ -35,11 +35,18 @@ class App extends React.Component {
           <Header/>
         </header>
         <MainVideo selectedVideo={this.state.selectedVideo} />
-        <MainVideoDetails selectedVideo={this.state.selectedVideo} bestDate={bestDate}/>
-        <Form selectedVideo={this.state.selectedVideo}/>
-        <CommentsList selectedVideo={this.state.selectedVideo.comments}/>
-        <NextVideoHeading/>
-        <NextVideoList nextVideoData={filteredVideos} handleVideoSelect={this.handleVideoSelect} />
+        <section className='page-components'>
+          <section className='details-comments'>
+            <MainVideoDetails selectedVideo={this.state.selectedVideo} bestDate={bestDate}/>
+            <Form selectedVideo={this.state.selectedVideo}/>
+            <CommentsList selectedVideo={this.state.selectedVideo.comments}/>
+          </section>
+          <section className='next-videos'>
+            <NextVideoHeading/>
+            <NextVideoList nextVideoData={filteredVideos} handleVideoSelect={this.handleVideoSelect} />
+          </section>
+        </section>
+
       </>
     )
   }

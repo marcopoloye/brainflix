@@ -1,5 +1,4 @@
 import React from 'react';
-import './NextVideoList.scss';
 import NextVideo from '../NextVideo/NextVideo';
 
 const NextVideoList = ({nextVideoData, handleVideoSelect}) => {

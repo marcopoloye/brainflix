@@ -7,6 +7,9 @@
     @include tablet {
         width: 696px;
     }
+    @include desktop {
+        width: 850px;
+    }
 }
 .main-video__controls-play {
     height: 5rem;

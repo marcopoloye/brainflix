@@ -20,7 +20,6 @@
         &-bar {
         flex-grow: 1;
         padding: .6rem 0 .6rem 2rem;
-  
         border: 1px solid #e1e1e1;
         border-radius: 4px;
         margin: 1rem 0;
@@ -82,6 +81,19 @@
             margin: 0;
             height: 2.5rem;
             width: 2.5rem;
+        }
+        &__button {
+            width: 9.5rem;
+            padding: .75rem 0;
+        }
+    }
+    @include desktop {
+        margin: 1.5rem 8.75rem 1.5rem 8rem;
+        &__search {
+            width: 31.5rem;
+        }
+        &__avatar {
+            margin-left: 1rem;
         }
         &__button {
             width: 9.5rem;

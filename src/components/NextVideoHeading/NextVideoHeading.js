@@ -3,11 +3,9 @@ import './NextVideoHeading.scss';
 
 
 const NextVideoHeading = () => {
-
-
     return (
         <div className='next-video__heading'>
-            <p>Next video</p>
+            <p>Next videos</p>
         </div>
     )
 }

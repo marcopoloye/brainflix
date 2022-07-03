@@ -46,11 +46,20 @@
             line-height: 1.375rem;
         }
         &__name-date {
-            padding: 1.5rem 0 .5rem;
+            padding: 1.5rem 0 .25rem;
         }
-
         &__comment {
-            padding-bottom: 1.5rem;
+            padding-bottom: 1.25rem;
+            line-height: 1.375rem;
+        }
+    }
+    @include desktop {
+        margin: 0 0 0 8rem;
+        border-top: 1px #e1e1e1 solid;
+        border-bottom: none;
+        padding-right: 1.5rem;
+        &__comment {
+            padding-right: 2rem;
         }
     }
 }

@@ -11,11 +11,13 @@
     font-weight: 700;
 }
 
-
 body {
     margin: 0 0 1.25rem;
     font: .75rem 'Avenir-Regular';
     color: #323232;
+    @include desktop {
+        margin: 0;
+    }
 }
 
 h1, h2 {
@@ -28,4 +30,7 @@ p {
 
 input:focus {
     outline: 2px solid #0095ff;
+}
+input:invalid {
+    outline: 1px solid #d22d2d;
 }
