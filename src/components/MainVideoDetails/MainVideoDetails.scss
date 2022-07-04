@@ -45,8 +45,7 @@
     &__views {
         background: url(../../assets/icons/views.svg) no-repeat;
         background-size: 1.35rem;
-        padding-left: 1.7rem;
-        padding-bottom: .9rem;
+        padding: 0 0 .9rem 1.7rem;
     }
     &__date {
         color: #afafaf;
@@ -62,8 +61,7 @@
             margin: 0 2.25rem;
         }
         &__title {
-            font-family: 'Avenir-Bold';
-            font-size: 2.05rem;
+            font: 2.05rem 'Avenir-Bold';
             line-height: 2rem;
             padding: 2.25rem 0 1.5rem;
         }
@@ -71,7 +69,6 @@
             border-top: none;
             padding: 0 0 .75rem;
             justify-content: space-between;
-            font-size: .875rem;
         }
         &__channel-date, &__views-likes {
             display: flex;
@@ -99,10 +96,8 @@
             border-top: none;
             padding: 0 1.5rem .75rem 0;
             justify-content: space-between;
-            font-size: .875rem;
         }
         &__description {
-            font-size: .875rem;
             padding: 1.25rem 1.3rem 2rem 0;
             line-height: 1.375rem;
         }

@@ -13,24 +13,26 @@
 
 body {
     margin: 0 0 1.25rem;
-    font: .75rem 'Avenir-Regular';
+    font: .8125rem 'Avenir-Regular';
     color: #323232;
+    @include tablet {
+        font-size: .875rem;
+    }
     @include desktop {
+        font-size: .875rem;
         margin: 0;
+        
     }
 }
 
-h1, h2 {
-    margin: 0;
-}
-
-p {
+h1, h2, p {
     margin: 0;
 }
 
 input:focus {
     outline: 2px solid #0095ff;
 }
+
 input:invalid {
     outline: 1px solid #d22d2d;
 }

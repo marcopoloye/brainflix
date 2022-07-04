@@ -24,34 +24,28 @@
         border: 1px solid #e1e1e1;
         border-radius: 4px;
         margin: 1rem 0;
-        background: url('../../assets/icons/search.svg') no-repeat .6rem;
-        background-color: #fafafa;
+        background: #fafafa url('../../assets/icons/search.svg') no-repeat .6rem;
         background-size: 1rem;
-        overflow: hidden;
         }
         ::placeholder {
             color: black;
-            font-size: .75rem;
-            font-family: 'Avenir-Regular';
+            font: .75rem 'Avenir-Regular';
         }
     }
     &__avatar {
         height: 2.25rem;
         width: 2.25rem;
         border-radius: 50%;
-        background: url('../../assets/images/Mohan-muruge.jpg');
+        background: #e1e1e1 url('../../assets/images/Mohan-muruge.jpg');
         background-size: cover;
-        background-color: #e1e1e1;
         margin-left: 1rem;
         cursor: pointer;
     }
     &__button {
         color: white;
         width: 100%;
-        background: url('../../assets/icons/upload.svg') no-repeat;
-        background-color: #0095ff;
+        background: #0095ff url('../../assets/icons/upload.svg') no-repeat 3% 50%;
         background-size: 1.25rem;
-        background-position: 3% 50%;
         border: none;
         border-radius: 4px;
         text-transform: uppercase;
@@ -70,6 +64,7 @@
         &__search {
             flex-wrap: nowrap;
             width: 30rem;
+
             &-bar {
                 margin: 0;
                 flex-grow: 0;
@@ -90,6 +85,7 @@
     }
     @include desktop {
         margin: 1.5rem 8.75rem 1.5rem 8rem;
+        
         &__search {
             width: 31.5rem;
         }

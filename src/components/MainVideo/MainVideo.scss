@@ -4,6 +4,7 @@
 .main-video {
     height: auto;
     width: 100%;
+    
     @include tablet {
         width: 696px;
     }
