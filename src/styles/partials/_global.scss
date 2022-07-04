@@ -34,3 +34,10 @@ input:focus {
 input:invalid {
     outline: 1px solid #d22d2d;
 }
+
+button {
+    cursor: pointer;
+    &:hover {
+        background-color: #0065ad;
+    }
+}
