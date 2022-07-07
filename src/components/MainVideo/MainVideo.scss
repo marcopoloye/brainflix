@@ -2,14 +2,16 @@
 @use '../../styles/partials/mixins' as *;
 
 .main-video {
-    height: auto;
-    width: 100%;
+    max-width: 320px;
+    max-height: 179px;
     
     @include tablet {
-        width: 696px;
+        max-width: 696px;
+        max-height: 390px;
     }
     @include desktop {
-        width: 850px;
+        max-width: 850px;
+        max-height: 475px;
     }
 }
 .main-video__container {

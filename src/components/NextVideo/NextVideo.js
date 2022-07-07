@@ -2,20 +2,18 @@ import React from 'react';
 import './NextVideo.scss';
 
 
-const NextVideo = ({video, handleVideoSelect}) => {
-
+const NextVideo = ({nextVideo, handleVideoSelect}) => {
     const handleClick = () => {
-        handleVideoSelect(video.id)
+        handleVideoSelect(nextVideo.id)
     }
-
+    
     return (
         <div className='next-video__container'>
-            <img className='next-video__thumbnail' onClick={handleClick} src={video.image} alt='video thumbnail'/>
-            <div className='next-video__text'>
-                <p className='next-video__title'>{video.title}</p>
-                <p className='next-video__channel'>{video.channel}</p>
+            <img className='next-video__thumbnail' onClick= {handleClick} src= {nextVideo.image} alt= {nextVideo.title}/>
+            <div className='next-video__text' onClick= {handleClick}>
+                <p className='next-video__title'> {nextVideo.title} </p>
+                <p className='next-video__channel'> {nextVideo.channel} </p>
             </div>
-
         </div>
     )
 }

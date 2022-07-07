@@ -22,19 +22,18 @@ class App extends React.Component {
   }
   
   render() {
-    const filteredVideos = this.state.videoList.filter( video => video.id !== this.state.selectedVideo.id )
+    const filteredVideos = this.state.videoList.filter(video => video.id !== this.state.selectedVideo.id)
 
     const timestamp = this.state.selectedVideo.timestamp;
     const betterDate = new Date(timestamp);
     const bestDate = (betterDate.getMonth()+1) + '/' + betterDate.getDate() + '/' + betterDate.getFullYear();
-    console.log(bestDate)
 
     return (
       <>
         <header className='header'>
           <Header/>
         </header>
-        <MainVideo selectedVideo={this.state.selectedVideo} />
+        <MainVideo selectedVideo={this.state.selectedVideo}/>
         <section className='page-components'>
           <section className='details-comments'>
             <MainVideoDetails selectedVideo={this.state.selectedVideo} bestDate={bestDate}/>
@@ -43,10 +42,9 @@ class App extends React.Component {
           </section>
           <section className='next-videos'>
             <NextVideoHeading/>
-            <NextVideoList nextVideoData={filteredVideos} handleVideoSelect={this.handleVideoSelect} />
+            <NextVideoList nextVideoData={filteredVideos} handleVideoSelect={this.handleVideoSelect}/>
           </section>
         </section>
-
       </>
     )
   }

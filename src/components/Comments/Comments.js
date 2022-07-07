@@ -6,7 +6,7 @@ const Comments = ({postedComment}) => {
     const timestamp = postedComment.timestamp;
     const betterDate = new Date(timestamp);
     const bestDate = (betterDate.getMonth()+1) + '/' + betterDate.getDate() + '/' + betterDate.getFullYear();
-    console.log(bestDate)
+
 
     return (
         <div className='comments'>
@@ -14,7 +14,7 @@ const Comments = ({postedComment}) => {
             </div>
             <div className='comments__text-container'>
                 <div className='comments__name-date'>
-                    <p className='comments__name'>
+                    <p className='comments__name' >
                         {postedComment.name}
                     </p>
                     <p className='comments__date'>
@@ -25,7 +25,6 @@ const Comments = ({postedComment}) => {
                     {postedComment.comment}
                 </p>
             </div>
- 
         </div>
     )
 }

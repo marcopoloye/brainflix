@@ -2,10 +2,11 @@ import React from 'react';
 import NextVideo from '../NextVideo/NextVideo';
 
 const NextVideoList = ({nextVideoData, handleVideoSelect}) => {
+    console.log(nextVideoData)
     return (
         <div>
             {
-                nextVideoData.map(video => <NextVideo video = {video} handleVideoSelect = {handleVideoSelect}/>)
+                nextVideoData.map((nextVideo, index) => <NextVideo nextVideo= {nextVideo} handleVideoSelect= {handleVideoSelect} key={index}/>)
             }
         </div>
     )

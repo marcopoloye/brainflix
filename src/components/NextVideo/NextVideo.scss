@@ -31,6 +31,7 @@
     @include tablet {
         &__container {
             margin: 1.5rem 2.25rem 0;
+            max-width: 92%;
         }
         &__text {
             width: 25%;
@@ -40,6 +41,7 @@
     @include desktop {
         &__container {
             margin: 1.5rem 1.5rem 0;
+            max-width: 95%;
         }
         &__text {
             display: flex;
