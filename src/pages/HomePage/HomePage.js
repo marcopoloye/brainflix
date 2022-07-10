@@ -8,6 +8,7 @@ import NextVideo from '../../components/NextVideo/NextVideo';
 import NextVideoHeading from '../../components/NextVideoHeading/NextVideoHeading';
 import {apiKey, apiUrl} from '../../App';
 import axios from 'axios';
+import './HomePage.scss'
 
 
 class HomePage extends Component {
@@ -72,11 +73,11 @@ class HomePage extends Component {
           <header className='header'>
             <Header/>
           </header>
-          <section className='video'>
+
             {
               this.state.selectedVideo ? (<MainVideo video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
             }
-          </section>
+
           <section className='page-components'>
             <section className='details-comments'>
               {

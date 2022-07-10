@@ -31,23 +31,25 @@
     &__link {
         text-decoration: none;
         color: #323232;
+        display: flex;
     }
     @include tablet {
         &__container {
             margin: 1.5rem 2.25rem 0;
             max-width: 92%;
         }
-        &__text {
+        &__text &__link {
             width: 25%;
             font-size: .875rem;
         }
+
     }
     @include desktop {
         &__container {
             margin: 1.5rem 1.5rem 0;
             max-width: 95%;
         }
-        &__text {
+        &__text &__link {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
