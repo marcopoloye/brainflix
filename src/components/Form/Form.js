@@ -2,10 +2,11 @@ import './Form.scss';
 
 
 const Form = (props) => {
+
     return (
         <>
             <div className='form'>
-                <p className='form__comment-count'>{props.selectedVideo.comments.length} Comments</p>
+                <p className='form__comment-count'>{props.video.comments.length} Comments</p>
                 <p className='form__title'>Join the conversation</p>
                 <div className='form__container'>
                     <div className='form__avatar'>

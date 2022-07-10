@@ -72,11 +72,20 @@ class HomePage extends Component {
           <header className='header'>
             <Header/>
           </header>
+          <section className='video'>
+            {
+              this.state.selectedVideo ? (<MainVideo video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
+            }
+          </section>
           <section className='page-components'>
             <section className='details-comments'>
-              <MainVideoDetails/>
-              {/* <Form/>
-              <CommentsList/> */}
+              {
+                this.state.selectedVideo ? (<MainVideoDetails video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
+              }
+              {
+                this.state.selectedVideo ? (<Form video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
+              }
+
             </section>
             <section className='next-videos'>
               <NextVideoHeading/>
