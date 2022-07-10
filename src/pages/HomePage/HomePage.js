@@ -4,10 +4,11 @@ import MainVideo from '../../components/MainVideo/MainVideo'
 import MainVideoDetails from '../../components/MainVideoDetails/MainVideoDetails';
 import Form from '../../components/Form/Form';
 import CommentsList from '../../components/CommentsList/CommentsList';
-import NextVideoList from '../../components/NextVideoList/NextVideoList';
+import NextVideo from '../../components/NextVideo/NextVideo';
 import NextVideoHeading from '../../components/NextVideoHeading/NextVideoHeading';
 import {apiKey, apiUrl} from '../../App';
 import axios from 'axios';
+
 
 class HomePage extends Component {
     state = {
@@ -79,8 +80,8 @@ class HomePage extends Component {
               <CommentsList/> */}
             </section>
             <section className='next-videos'>
-              {/* <NextVideoHeading/> */}
-              <NextVideoList videos={filteredVideos}/>
+              <NextVideoHeading/>
+              <NextVideo videos={filteredVideos}/>
             </section>
           </section>
         </>

@@ -1,20 +1,25 @@
 import React from 'react';
 import './NextVideo.scss';
+import { Link } from 'react-router-dom'
 
 
-const NextVideo = ({nextVideo, handleVideoSelect}) => {
-    const handleClick = () => {
-        handleVideoSelect(nextVideo.id)
-    }
-
+const NextVideo = (props) => {
     return (
-        <div className='next-video__container'>
-            <img className='next-video__thumbnail' onClick= {handleClick} src= {nextVideo.image} alt= {nextVideo.title}/>
-            <div className='next-video__text' onClick= {handleClick}>
-                <p className='next-video__title'> {nextVideo.title} </p>
-                <p className='next-video__channel'> {nextVideo.channel} </p>
-            </div>
-        </div>
+        <>
+            {props.videos.map(video => {
+                return (
+                <div className='next-video__container' key= {video.id}>
+                    <Link to={`/video/${video.id}`}>
+                        <img className='next-video__thumbnail' src= {video.image} alt= {video.title}/>
+                        <div className='next-video__text'>
+                            <p className='next-video__title'> {video.title} </p>
+                            <p className='next-video__channel'> {video.channel} </p>
+                        </div>
+                    </Link>
+                </div>
+                )
+            })}
+        </>
     )
 }
 
