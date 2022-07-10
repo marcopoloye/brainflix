@@ -28,6 +28,10 @@
         line-height: 1.15rem;
         font-weight: 700;
     }
+    &__link {
+        text-decoration: none;
+        color: #323232;
+    }
     @include tablet {
         &__container {
             margin: 1.5rem 2.25rem 0;

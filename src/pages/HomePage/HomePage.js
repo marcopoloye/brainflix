@@ -72,11 +72,10 @@ class HomePage extends Component {
           <header className='header'>
             <Header/>
           </header>
-          {/* <MainVideo/> */}
           <section className='page-components'>
             <section className='details-comments'>
-              {/* <MainVideoDetails/>
-              <Form/>
+              <MainVideoDetails/>
+              {/* <Form/>
               <CommentsList/> */}
             </section>
             <section className='next-videos'>
