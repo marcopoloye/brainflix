@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import MainVideo from '../../components/MainVideo/MainVideo'
 import MainVideoDetails from '../../components/MainVideoDetails/MainVideoDetails';
 import Form from '../../components/Form/Form';
-import CommentsList from '../../components/CommentsList/CommentsList';
+import Comments from '../../components/Comments/Comments';
 import NextVideo from '../../components/NextVideo/NextVideo';
 import NextVideoHeading from '../../components/NextVideoHeading/NextVideoHeading';
 import {apiKey, apiUrl} from '../../App';
@@ -85,7 +85,9 @@ class HomePage extends Component {
               {
                 this.state.selectedVideo ? (<Form video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
               }
-
+              {
+                this.state.selectedVideo ? (<Comments comments={this.state.selectedVideo.comments}/>) : (<p>Loading...</p>)
+              }
             </section>
             <section className='next-videos'>
               <NextVideoHeading/>

@@ -51,13 +51,16 @@
         text-transform: uppercase;
         padding: .65rem 0;
         font-size: .75rem;
+
+        &-link {
+            width: 100%;
+        }
     }
     @include tablet {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 1.5rem 2.25rem;
-
+        margin: .25rem 2.25rem;
         &__logo {
             margin: 0;
         }
@@ -78,13 +81,13 @@
             height: 2.5rem;
             width: 2.5rem;
         }
-        &__button {
+        &__button, &__button-link {
             width: 9.5rem;
             padding: .75rem 0;
         }
     }
     @include desktop {
-        margin: 1.5rem 8.75rem 1.5rem 8rem;
+        margin: .25rem 8.75rem .25rem 8rem;
         
         &__search {
             width: 31.5rem;
