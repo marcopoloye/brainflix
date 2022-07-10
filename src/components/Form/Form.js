@@ -11,7 +11,6 @@ const Form = (props) => {
                     <div className='form__avatar'>
                     </div>
                     <form className='form__section'>
-
                         <input className='form__input' type='textarea' placeholder='Add a new comment'/>
                         <button className='form__button' type='submit'>Comment</button>
                     </form>

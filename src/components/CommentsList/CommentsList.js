@@ -2,7 +2,7 @@ import React from 'react';
 import Comments from '../Comments/Comments'
 
 const CommentsList = (props) => {
-
+    console.log(props)
     return (
         <div>
             {

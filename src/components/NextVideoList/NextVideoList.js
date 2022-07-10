@@ -1,13 +1,20 @@
 import React from 'react';
-import NextVideo from '../NextVideo/NextVideo';
+import { Link } from 'react-router-dom'
 
-const NextVideoList = ({nextVideoData, handleVideoSelect}) => {
-    console.log(nextVideoData)
+const NextVideoList = (props) => {
     return (
         <div>
-            {
-                nextVideoData.map((nextVideo, index) => <NextVideo nextVideo= {nextVideo} handleVideoSelect= {handleVideoSelect} key={index}/>)
-            }
+            {props.videos.map(video => {
+                return (
+                    <div key= {video.id}>
+                        <Link to={`/video/${video.id}`}>
+                            <img src={video.image} alt={video.title}/>
+                            <p> {video.title} </p>
+                            <p> {video.channel} </p>
+                        </Link>
+                    </div>
+                )
+            })}
         </div>
     )
 }
