@@ -81,13 +81,13 @@ class HomePage extends Component {
           <section className='page-components'>
             <section className='details-comments'>
               {
-                this.state.selectedVideo ? (<MainVideoDetails video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
+                this.state.selectedVideo ? (<MainVideoDetails video={this.state.selectedVideo}/>) : ('')
               }
               {
-                this.state.selectedVideo ? (<Form video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
+                this.state.selectedVideo ? (<Form video={this.state.selectedVideo}/>) : ('')
               }
               {
-                this.state.selectedVideo ? (<Comments comments={this.state.selectedVideo.comments}/>) : (<p>Loading...</p>)
+                this.state.selectedVideo ? (<Comments comments={this.state.selectedVideo.comments}/>) : ('')
               }
             </section>
             <section className='next-videos'>

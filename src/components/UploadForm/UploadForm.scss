@@ -1,0 +1,125 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+
+.upload-section {
+    padding: 1.5rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px #e1e1e1 solid;
+    &__heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    &__subheading {
+        text-transform: uppercase;
+        font-size: .75rem;
+        font-weight: 700;
+        color: #afafaf;
+        margin-bottom: .25rem;
+    }
+    &__thumbnail {
+        border-radius: 4px;
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+    &__input, &__input-two {
+        padding: .6rem;
+        background: #fafafa;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+    }
+    &__input-two {
+        padding: .6rem .6rem 3.5rem;
+        margin-bottom: 1.25rem;
+    }
+    ::placeholder {
+        color: black;
+        font: .75rem 'Avenir-Regular';
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__button {
+        color: white;
+        width: 100%;
+        background: #0095ff url('../../assets/icons/publish.svg') no-repeat 3% 50%;
+        background-size: 1.25rem;
+        border: none;
+        border-radius: 4px;
+        text-transform: uppercase;
+        padding: .65rem 0;
+        font-size: .75rem;
+        margin-bottom: 2rem;
+    }
+    &__button-link {
+        text-decoration: none;
+    }
+    &__cancel {
+        text-transform: uppercase;
+        text-align: center;
+        color: #0095ff;
+        font-weight: 800;
+        font-size: .75rem;
+    }
+    @include tablet {
+        padding: 2.25rem 2.25rem .5rem;
+
+        &__heading {
+            font-family: 'Avenir-Bold';
+            font-size: 2rem;
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px #e1e1e1 solid;
+        }
+        &__thumbnail {
+            border-radius: 4px;
+            width: 50%;
+            &-box {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__button-link {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            border-top: 1px #e1e1e1 solid;
+            padding-top: 1rem;
+        }
+        &__button {
+            width: 20%;
+            margin: 0 0 0 4rem;
+        }
+    }
+    @include desktop {
+        padding: 2.25rem 8.75rem .5rem 8rem;
+        &__thumbnail {
+            border-radius: 4px;
+            width: 348px;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding-left: 1.5rem;
+        }
+        &__content-box {
+            display: flex;
+        }
+        &__button {
+            width: 13%;
+            margin: 0 0 0 4rem;
+        }
+        &__input {
+            margin-bottom: 2rem;
+            padding: .75rem;
+        }
+        &__input-two {
+            padding: .6rem .6rem 4.25rem;
+            margin-bottom: 0;
+        }
+    }
+
+}
