@@ -3,11 +3,6 @@ import './Comments.scss';
 
 const Comments = (props) => {
 
-    // const timestamp = postedComment.timestamp;
-    // const betterDate = new Date(timestamp);
-    // const bestDate = (betterDate.getMonth()+1) + '/' + betterDate.getDate() + '/' + betterDate.getFullYear();
-
-
     return (
         <div>
             {props.comments.map(comment => {

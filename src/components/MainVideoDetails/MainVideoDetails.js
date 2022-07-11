@@ -2,11 +2,11 @@ import React from 'react';
 import './MainVideoDetails.scss';
 
 const MainVideoDetails = (props) => {
+
     const {
         channel,
         description,
         likes,
-        timestamp,
         title,
         views
     } = props.video
@@ -23,7 +23,7 @@ const MainVideoDetails = (props) => {
                             By {channel}
                         </p>
                         <p className='main-video-details__date'>
-                            {timestamp}
+                            {props.date}
                         </p>
                     </div>
                     <div className='main-video-details__views-likes'>

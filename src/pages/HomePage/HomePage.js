@@ -66,22 +66,21 @@ class HomePage extends Component {
       const timestamp = this.state.selectedVideo.timestamp;
       const betterDate = new Date(timestamp);
       const bestDate = (betterDate.getMonth()+1) + '/' + betterDate.getDate() + '/' + betterDate.getFullYear();
-      
+
       return (
-        
         <>
           <header className='header'>
             <Header/>
           </header>
-
+          <section>
             {
               this.state.selectedVideo ? (<MainVideo video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
             }
-
+          </section>
           <section className='page-components'>
             <section className='details-comments'>
               {
-                this.state.selectedVideo ? (<MainVideoDetails video={this.state.selectedVideo}/>) : ('')
+                this.state.selectedVideo ? (<MainVideoDetails video={this.state.selectedVideo} date={bestDate}/>) : ('')
               }
               {
                 this.state.selectedVideo ? (<Form video={this.state.selectedVideo}/>) : ('')

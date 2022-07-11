@@ -12,7 +12,6 @@ class UploadPage extends React.Component {
                 </header>
                 <UploadForm/>
             </>
-
         );
     }
 }

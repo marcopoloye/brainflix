@@ -1,6 +1,5 @@
 import './Form.scss';
 
-
 const Form = (props) => {
 
     return (

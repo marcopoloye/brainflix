@@ -1,15 +1,4 @@
-@use './mixins' as *;
-
-@font-face {
-    font-family: 'Avenir-Regular';
-    src: url('../../assets/fonts/AvenirNextLTPro-Regular.otf');
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Avenir-Bold';
-    src: url('../../assets/fonts/AvenirNextLTPro-Bold.otf');
-    font-weight: 700;
-}
+@use '../../styles/partials/mixins' as *;
 
 body {
     margin: 0 0 1.25rem;
@@ -21,7 +10,6 @@ body {
     @include desktop {
         font-size: .875rem;
         margin: 0;
-        
     }
 }
 
