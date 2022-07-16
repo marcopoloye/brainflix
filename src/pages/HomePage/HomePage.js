@@ -39,8 +39,8 @@ class HomePage extends Component {
           this.setState({
             selectedVideo: firstVideoData.data
           })
-        .catch((error) => {'Error retrieving data'})
         })
+        .catch((error) => {'Error retrieving data'})
     }
 
     componentDidUpdate(prevProps) {

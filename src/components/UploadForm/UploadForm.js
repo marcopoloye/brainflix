@@ -15,12 +15,12 @@ const UploadForm = () => {
         if (!vidTitle && !vidDesc) {
             alert('Please upload a video')
         } else {
+            alert('Video Uploaded!');
             axios.post(`http://localhost:8080/videos/`, {
                 title: vidTitle,
                 description: vidDesc
             })
-                .catch((error) => {'Error uploading'})
-            alert('Video Uploaded!')
+                .catch((error) => {'Error uploading'});
         }
     }
 
