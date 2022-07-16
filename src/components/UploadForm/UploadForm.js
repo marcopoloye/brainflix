@@ -19,6 +19,7 @@ const UploadForm = () => {
                 title: vidTitle,
                 description: vidDesc
             })
+                .catch((error) => {'Error uploading'})
             alert('Video Uploaded!')
         }
     }
@@ -32,14 +33,14 @@ const UploadForm = () => {
                     <img className= 'upload-section__thumbnail' src= {image}/>
                 </div>
                 <form className= 'upload-section__form' id= 'upload-form' onSubmit= {handleSubmit}>
-                    <label className= 'upload-section__subheading'>
+                    <label className= 'upload-section__subheading' for= 'input-title'>
                         Title your video
                     </label>
-                        <input className= 'upload-section__input' type= 'text' placeholder= 'Add a title to your video'/>
-                    <label className= 'upload-section__subheading'>
+                        <input className= 'upload-section__input' type= 'text' id= 'input-title' placeholder= 'Add a title to your video'/>
+                    <label className= 'upload-section__subheading' for= 'input-description'>
                         Add a video description
                     </label>
-                        <input className= 'upload-section__input-two' type= 'textarea' placeholder= 'Add a description to your video'/>
+                        <input className= 'upload-section__input-two' type= 'textarea' id= 'input-description' placeholder= 'Add a description to your video'/>
                 </form>
             </div>
             <div className= 'upload-section__button-link'>

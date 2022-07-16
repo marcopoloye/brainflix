@@ -15,7 +15,7 @@ class HomePage extends Component {
         selectedVideo: '',
         videoList: [],
       }
-      
+
     componentDidMount() {
 
       const currentVideoId = this.props.match.params.videoId;
@@ -25,7 +25,6 @@ class HomePage extends Component {
 
           const videoListResults = response.data;
           const firstVideoId = videoListResults[0].id;
-
 
           this.setState({
             videoList: videoListResults
@@ -40,6 +39,7 @@ class HomePage extends Component {
           this.setState({
             selectedVideo: firstVideoData.data
           })
+        .catch((error) => {'Error retrieving data'})
         })
     }
 
@@ -53,10 +53,11 @@ class HomePage extends Component {
       if (prevVideoId !== currentVideoId) {
         axios.get(`http://localhost:8080/videos/${videoIdToFetch}`)
           .then ((videoData) => {
-            this.setState({
+            this.setState ({
               selectedVideo: videoData.data
             })
           })
+          .catch((error) => {'Error retrieving data'})
       }
     }
       
