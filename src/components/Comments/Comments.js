@@ -5,9 +5,9 @@ const Comments = (props) => {
 
     return (
         <div>
-            {props.comments.map(comment => {
+            {props.comments.map((comment, index) => {
                 return (
-                    <div className='comments' key={comment.id}>
+                    <div className='comments' key={index}>
                         <div className='comments__avatar'></div>
                         <div className='comments__text-container'>
                             <div className='comments__name-date'>

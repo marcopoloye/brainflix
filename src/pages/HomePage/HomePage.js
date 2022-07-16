@@ -6,7 +6,6 @@ import Form from '../../components/Form/Form';
 import Comments from '../../components/Comments/Comments';
 import NextVideo from '../../components/NextVideo/NextVideo';
 import NextVideoHeading from '../../components/NextVideoHeading/NextVideoHeading';
-import {apiKey, apiUrl} from '../../App';
 import axios from 'axios';
 import './HomePage.scss'
 
@@ -16,16 +15,17 @@ class HomePage extends Component {
         selectedVideo: '',
         videoList: [],
       }
-
+      
     componentDidMount() {
 
       const currentVideoId = this.props.match.params.videoId;
 
-      axios.get(`${apiUrl}/videos?api_key=${apiKey}`)
+      axios.get(`http://localhost:8080/videos`)
         .then ((response) => {
 
           const videoListResults = response.data;
           const firstVideoId = videoListResults[0].id;
+
 
           this.setState({
             videoList: videoListResults
@@ -34,7 +34,7 @@ class HomePage extends Component {
           return (currentVideoId) ? currentVideoId : firstVideoId;
         })
         .then ((firstVideoId) => {
-          return axios.get(`${apiUrl}/videos/${firstVideoId}?api_key=${apiKey}`)
+          return axios.get(`http://localhost:8080/videos/${firstVideoId}`)
         })
         .then ((firstVideoData) => {
           this.setState({
@@ -51,7 +51,7 @@ class HomePage extends Component {
       const videoIdToFetch = (currentVideoId) ? currentVideoId : this.state.videoList[0].id
 
       if (prevVideoId !== currentVideoId) {
-        axios.get(`${apiUrl}/videos/${videoIdToFetch}?api_key=${apiKey}`)
+        axios.get(`http://localhost:8080/videos/${videoIdToFetch}`)
           .then ((videoData) => {
             this.setState({
               selectedVideo: videoData.data

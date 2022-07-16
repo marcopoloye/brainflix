@@ -63,6 +63,9 @@
         color: #0095ff;
         font-weight: 800;
         font-size: .75rem;
+        &-link {
+            text-decoration: none;
+        }
     }
     @include tablet {
         padding: 2.25rem 2.25rem .5rem;
@@ -99,6 +102,7 @@
         &__thumbnail {
             border-radius: 4px;
             width: 348px;
+            margin-bottom: 2rem;
         }
         &__form {
             display: flex;
@@ -112,6 +116,9 @@
         &__button {
             width: 13%;
             margin: 0 0 0 4rem;
+            &-link {
+                padding-top: 1.5rem;
+            }
         }
         &__input {
             margin-bottom: 2rem;
@@ -121,6 +128,7 @@
             padding: .6rem .6rem 4.25rem;
             margin-bottom: 0;
         }
+
     }
 
 }
