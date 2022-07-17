@@ -1,4 +1,3 @@
-import React from 'react';
 import './MainVideoDetails.scss';
 
 const MainVideoDetails = (props) => {

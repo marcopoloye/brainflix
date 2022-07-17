@@ -1,4 +1,3 @@
-import React from 'react';
 import './NextVideo.scss';
 import { Link } from 'react-router-dom'
 

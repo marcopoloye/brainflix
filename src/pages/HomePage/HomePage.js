@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Header from '../../components/Header/Header';
+import React from 'react';
 import MainVideo from '../../components/MainVideo/MainVideo'
 import MainVideoDetails from '../../components/MainVideoDetails/MainVideoDetails';
 import Form from '../../components/Form/Form';
@@ -10,7 +9,7 @@ import axios from 'axios';
 import './HomePage.scss'
 
 
-class HomePage extends Component {
+class HomePage extends React.Component {
     state = {
         selectedVideo: '',
         videoList: [],

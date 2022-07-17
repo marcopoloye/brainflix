@@ -1,5 +1,4 @@
 import axios from 'axios';
-import React from 'react';
 import { Link } from 'react-router-dom';
 import image from '../../assets/images/Upload-video-preview.jpg'
 import './UploadForm.scss'
