@@ -70,7 +70,7 @@ class HomePage extends Component {
 
       return (
         <>
-          <header className='header'>
+          <header>
             <Header/>
           </header>
           <section>
@@ -79,7 +79,7 @@ class HomePage extends Component {
             }
           </section>
           <section className='page-components'>
-            <section className='details-comments'>
+            <section className='page-components__main-video'>
               {
                 this.state.selectedVideo ? (<MainVideoDetails video={this.state.selectedVideo} date={bestDate}/>) : ('')
               }
@@ -90,7 +90,7 @@ class HomePage extends Component {
                 this.state.selectedVideo ? (<Comments comments={this.state.selectedVideo.comments}/>) : ('')
               }
             </section>
-            <section className='next-videos'>
+            <section className='page-components__next-videos'>
               <NextVideoHeading/>
               <NextVideo videos={filteredVideos}/>
             </section>

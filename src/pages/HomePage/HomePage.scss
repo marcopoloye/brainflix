@@ -3,15 +3,16 @@
 @include desktop {
     .page-components {
         display: flex;
+        &__main-video {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+        }
+        &__next-videos {
+            border-left:  1px #e1e1e1 solid;
+            width: 35%;
+            padding-bottom: 2.5rem;
+        }
     }
-    .details-comments {
-        display: flex;
-        flex-direction: column;
-        width: 65%;
-    }
-    .next-videos {
-        border-left:  1px #e1e1e1 solid;
-        width: 35%;
-        padding-bottom: 2.5rem;
-    }
+
 }
