@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import image from '../../assets/images/Upload-video-preview.jpg'
 import './UploadForm.scss'
 
-const UploadForm = () => {
+
+const UploadForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -22,6 +22,9 @@ const UploadForm = () => {
                 .catch((error) => {'Error uploading'});
         }
     }
+    const handleClick = () => {
+        props.props.history.push('/');
+    }
 
     return (
         <div className= 'upload-section'>
@@ -32,11 +35,11 @@ const UploadForm = () => {
                     <img className= 'upload-section__thumbnail' src= {image}/>
                 </div>
                 <form className= 'upload-section__form' id= 'upload-form' onSubmit= {handleSubmit}>
-                    <label className= 'upload-section__subheading' for= 'input-title'>
+                    <label className= 'upload-section__subheading' htmlFor= 'input-title'>
                         Title your video
                     </label>
                         <input className= 'upload-section__input' type= 'text' id= 'input-title' placeholder= 'Add a title to your video'/>
-                    <label className= 'upload-section__subheading' for= 'input-description'>
+                    <label className= 'upload-section__subheading' htmlFor= 'input-description'>
                         Add a video description
                     </label>
                         <input className= 'upload-section__input-two' type= 'textarea' id= 'input-description' placeholder= 'Add a description to your video'/>
@@ -44,11 +47,9 @@ const UploadForm = () => {
             </div>
             <div className= 'upload-section__button-link'>
                 <button className= 'upload-section__button' type= 'submit' form= 'upload-form'> Publish </button>
-                <Link className= 'upload-section__cancel-link' to= '/'>
-                    <div className= 'upload-section__cancel'>
-                        Cancel 
-                    </div>
-                </Link>
+                <div className= 'upload-section__cancel' onClick = {handleClick}>
+                    Cancel 
+                </div>
             </div>
         </div>
     );

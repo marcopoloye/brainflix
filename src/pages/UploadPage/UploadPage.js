@@ -1,9 +1,10 @@
-import UploadForm from '../../components/UploadForm/UploadForm'
+import UploadForm from '../../components/UploadForm/UploadForm';
 
-const UploadPage = () => {
+const UploadPage = (props) => {
+
     return (
         <>
-            <UploadForm/>
+            <UploadForm props={props}/>
         </>
     );
 }

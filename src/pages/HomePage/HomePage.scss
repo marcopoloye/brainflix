@@ -1,4 +1,5 @@
 @use '../../styles/partials/mixins' as *;
+
 @include tablet {
     .page-components__next-videos {
         padding-bottom: 1rem;
