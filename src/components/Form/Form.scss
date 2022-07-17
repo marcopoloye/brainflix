@@ -38,8 +38,7 @@
         font: .75rem 'Avenir-Regular';
     }
     &__section {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         width: 82%;
     }
     &__title {

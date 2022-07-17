@@ -4,8 +4,6 @@
     .page-components {
         display: flex;
         &__main-video {
-            display: flex;
-            flex-direction: column;
             width: 65%;
         }
         &__next-videos {

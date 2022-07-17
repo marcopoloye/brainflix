@@ -5,7 +5,7 @@ import UploadForm from '../../components/UploadForm/UploadForm'
 const UploadPage = () => {
     return (
         <>
-            <header className='header'>
+            <header>
                 <Header/>
             </header>
             <UploadForm/>

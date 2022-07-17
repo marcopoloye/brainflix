@@ -4,8 +4,6 @@
 
 .upload-section {
     padding: 1.5rem 1rem 1rem;
-    display: flex;
-    flex-direction: column;
     border-top: 1px #e1e1e1 solid;
     &__heading {
         font-size: 1.5rem;
@@ -39,8 +37,7 @@
         font: .75rem 'Avenir-Regular';
     }
     &__form {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
     }
     &__button {
         color: white;
@@ -81,8 +78,7 @@
             border-radius: 4px;
             width: 50%;
             &-box {
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
             }
         }
         &__button-link {
@@ -105,8 +101,6 @@
             margin-bottom: 2rem;
         }
         &__form {
-            display: flex;
-            flex-direction: column;
             flex-grow: 1;
             padding-left: 1.5rem;
         }

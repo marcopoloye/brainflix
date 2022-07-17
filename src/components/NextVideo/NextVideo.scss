@@ -9,8 +9,7 @@
         height: 3.75rem;
     }
     &__text {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         justify-content: space-between;
         width: 60%;
         font-size: .8125rem;
@@ -51,9 +50,6 @@
             max-width: 95%;
         }
         &__text &__link {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             width: 40%;
             font-size: .8125rem;
         }
