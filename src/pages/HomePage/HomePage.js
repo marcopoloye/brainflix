@@ -70,9 +70,6 @@ class HomePage extends Component {
 
       return (
         <>
-          <header>
-            <Header/>
-          </header>
           <section>
             {
               this.state.selectedVideo ? (<MainVideo video={this.state.selectedVideo}/>) : (<p>Loading...</p>)
