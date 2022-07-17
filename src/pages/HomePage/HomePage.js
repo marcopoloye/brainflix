@@ -8,7 +8,6 @@ import NextVideoHeading from '../../components/NextVideoHeading/NextVideoHeading
 import axios from 'axios';
 import './HomePage.scss'
 
-
 class HomePage extends React.Component {
   state = {
       selectedVideo: '',

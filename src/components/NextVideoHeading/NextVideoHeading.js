@@ -1,6 +1,5 @@
 import './NextVideoHeading.scss';
 
-
 const NextVideoHeading = () => {
     return (
         <div className='next-video__heading'>

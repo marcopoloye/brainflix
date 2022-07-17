@@ -1,7 +1,6 @@
 import './NextVideo.scss';
 import { Link } from 'react-router-dom'
 
-
 const NextVideo = (props) => {
     return (
         <>
