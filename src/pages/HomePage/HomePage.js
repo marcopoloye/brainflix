@@ -15,12 +15,10 @@ class HomePage extends React.Component {
     }
 
   componentDidMount() {
-
     const currentVideoId = this.props.match.params.videoId;
 
     axios.get(`http://localhost:8080/videos`)
       .then ((response) => {
-
         const videoListResults = response.data;
         const firstVideoId = videoListResults[0].id;
 
@@ -42,10 +40,8 @@ class HomePage extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-
     const currentVideoId = this.props.match.params.videoId;
     const prevVideoId = prevProps.match.params.videoId;
-
     const videoIdToFetch = (currentVideoId) ? currentVideoId : this.state.videoList[0].id
 
     if (prevVideoId !== currentVideoId) {

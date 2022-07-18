@@ -1,7 +1,6 @@
 import './MainVideoDetails.scss';
 
 const MainVideoDetails = (props) => {
-
     const {
         channel,
         description,
