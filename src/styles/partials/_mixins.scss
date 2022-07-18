@@ -3,7 +3,6 @@
         @content;
     }
 }
-
 @mixin desktop {
     @media screen and (min-width: 1280px) {
         @content;
@@ -12,4 +11,21 @@
 @mixin flex-column {
     display: flex;
     flex-direction: column;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin avatar-small {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+@mixin avatar-smaller {
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
 }

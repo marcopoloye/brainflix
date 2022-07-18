@@ -8,6 +8,7 @@
 @include desktop {
     .page-components {
         display: flex;
+        
         &__main-video {
             width: 65%;
         }

@@ -13,9 +13,8 @@
         cursor: pointer;
     }
     &__search {
-        display: flex;
+        @include flex-between;
         align-items: center;
-        justify-content: space-between;
         flex-wrap: wrap;
         
         &-bar {
@@ -33,8 +32,7 @@
         }
     }
     &__avatar {
-        height: 2.25rem;
-        width: 2.25rem;
+        @include avatar-smaller;
         border-radius: 50%;
         background: #e1e1e1 url('../../assets/images/Mohan-muruge.jpg');
         background-size: cover;
@@ -61,6 +59,7 @@
         justify-content: space-between;
         align-items: center;
         margin: .25rem 2.25rem;
+        
         &__logo {
             margin: 0;
         }
@@ -78,8 +77,7 @@
         &__avatar {
             order: 2;
             margin: 0;
-            height: 2.5rem;
-            width: 2.5rem;
+            @include avatar-small;
         }
         &__button, &__button-link {
             width: 9.5rem;

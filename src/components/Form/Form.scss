@@ -6,8 +6,7 @@
     margin: 0 1rem;
 
     &__container {
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
         padding-bottom: 1rem;
         border-bottom: 1px #e1e1e1 solid;
     }
@@ -18,9 +17,7 @@
     }
     &__avatar {
         margin-top: 1.15rem;
-        height: 2.25rem;
-        width: 2.25rem;
-        border-radius: 50%;
+        @include avatar-smaller;
         background: url('../../assets/images/Mohan-muruge.jpg')#e1e1e1;
         background-size: cover;
         cursor: pointer;
@@ -70,8 +67,7 @@
         }
         &__avatar {
             margin: 0;
-            height: 2.5rem;
-            width: 2.5rem;
+            @include avatar-small;
         }
         &__comment-count {
             font-family: 'Avenir-Bold';

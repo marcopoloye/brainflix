@@ -17,7 +17,6 @@
 }
 .main-video__container {
     background: black;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
 }
 
