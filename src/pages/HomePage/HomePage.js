@@ -7,6 +7,7 @@ import NextVideo from '../../components/NextVideo/NextVideo';
 import NextVideoHeading from '../../components/NextVideoHeading/NextVideoHeading';
 import axios from 'axios';
 import './HomePage.scss'
+import { API_URL } from '../../config';
 
 class HomePage extends React.Component {
   state = {
@@ -17,7 +18,7 @@ class HomePage extends React.Component {
   componentDidMount() {
     const currentVideoId = this.props.match.params.videoId;
 
-    axios.get(`http://localhost:8080/videos`)
+    axios.get(`${API_URL}/videos`)
       .then ((response) => {
         const videoListResults = response.data;
         const firstVideoId = videoListResults[0].id;
@@ -29,7 +30,7 @@ class HomePage extends React.Component {
         return (currentVideoId) ? currentVideoId : firstVideoId;
       })
       .then ((firstVideoId) => {
-        return axios.get(`http://localhost:8080/videos/${firstVideoId}`)
+        return axios.get(`${API_URL}/videos/${firstVideoId}`)
       })
       .then ((firstVideoData) => {
         this.setState({
@@ -45,7 +46,7 @@ class HomePage extends React.Component {
     const videoIdToFetch = (currentVideoId) ? currentVideoId : this.state.videoList[0].id
 
     if (prevVideoId !== currentVideoId) {
-      axios.get(`http://localhost:8080/videos/${videoIdToFetch}`)
+      axios.get(`${API_URL}/videos/${videoIdToFetch}`)
         .then ((videoData) => {
           this.setState ({
             selectedVideo: videoData.data

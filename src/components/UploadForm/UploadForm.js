@@ -1,6 +1,7 @@
 import axios from 'axios';
 import image from '../../assets/images/Upload-video-preview.jpg'
 import './UploadForm.scss'
+import { API_URL } from '../../config';
 
 
 const UploadForm = (props) => {
@@ -15,7 +16,7 @@ const UploadForm = (props) => {
             alert('Please upload a video')
         } else {
             alert('Video Uploaded!');
-            axios.post(`http://localhost:8080/videos/`, {
+            axios.post(`${API_URL}/videos/`, {
                 title: vidTitle,
                 description: vidDesc
             })
