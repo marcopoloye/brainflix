@@ -1,7 +1,7 @@
 import axios from 'axios';
 import image from '../../assets/images/Upload-video-preview.jpg'
 import './UploadForm.scss'
-import { API_URL } from '../../config';
+import { API_URL } from '../../config/index';
 
 
 const UploadForm = (props) => {
