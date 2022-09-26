@@ -16,7 +16,7 @@ const UploadForm = (props) => {
             alert('Please upload a video')
         } else {
             alert('Video Uploaded!');
-            axios.post(`${API_URL}/videos/`, {
+            axios.post(`${API_URL}/videos`, {
                 title: vidTitle,
                 description: vidDesc
             })
