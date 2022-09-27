@@ -6,15 +6,18 @@ const Form = (props) => {
 
     const postComment = (e) => {
         e.preventDefault()
+        
+        if (e.target[0].value) {
+            axios.post(`${API_URL}/videos/${props.video.id}`, {
+                comment: e.target[0].value
+            })
+                .catch((error) => {'error'});
+    
+            e.target.reset();
+    
+            window.location.reload()
+        }
 
-        axios.post(`${API_URL}/videos/${props.video.id}`, {
-            comment: e.target[0].value
-        })
-            .catch((error) => {'error'});
-
-        e.target.reset();
-
-        window.location.reload()
     }
 
     return (
