@@ -1,4 +1,4 @@
-# BrainFlix
+# About
 
 A video streaming platform with video uploading and commenting capabilities
 
