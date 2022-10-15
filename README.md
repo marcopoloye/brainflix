@@ -1,6 +1,6 @@
 # BrainFlix
 
-A video streaming website with video uploading and commenting capabilities
+A video streaming platform with video uploading and commenting capabilities
 
 https://brainflix-2022.herokuapp.com/
 
