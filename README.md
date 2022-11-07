@@ -1,6 +1,6 @@
 # About
 
-A video streaming platform with video uploading and commenting capabilities
+A mock video streaming platform with video uploading and commenting capabilities
 
 https://brainflix-2022.herokuapp.com/
 
