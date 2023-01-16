@@ -7,7 +7,7 @@ import NextVideo from '../../components/NextVideo/NextVideo';
 import NextVideoHeading from '../../components/NextVideoHeading/NextVideoHeading';
 import axios from 'axios';
 import './HomePage.scss'
-import { API_URL } from '../../config/index';
+
 
 class HomePage extends React.Component {
   state = {
