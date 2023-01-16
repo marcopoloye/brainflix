@@ -33,7 +33,7 @@ const UploadForm = (props) => {
             <div className= 'upload-section__content-box'>
                 <div className= 'upload-section__thumbnail-box'>
                     <label className= 'upload-section__subheading'>Video thumbnail</label>
-                    <img className= 'upload-section__thumbnail' src= {image}/>
+                    <img className= 'upload-section__thumbnail' src= {image} alt='thumbnail'/>
                 </div>
                 <form className= 'upload-section__form' id= 'upload-form' onSubmit= {handleSubmit}>
                     <label className= 'upload-section__subheading' htmlFor= 'input-title'>
