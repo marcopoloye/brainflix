@@ -18,7 +18,7 @@ class HomePage extends React.Component {
   componentDidMount() {
     const currentVideoId = this.props.match.params.videoId;
 
-    axios.get(`https://brainflix2022api.netlify.app/home/videos`)
+    axios.get(`https://brainflix2022api.netlify.app/home`)
       .then ((response) => {
         const videoListResults = response.data;
         const firstVideoId = videoListResults[0].id;
@@ -30,7 +30,7 @@ class HomePage extends React.Component {
         return (currentVideoId) ? currentVideoId : firstVideoId;
       })
       .then ((firstVideoId) => {
-        return axios.get(`https://brainflix2022api.netlify.app/home/videos/${firstVideoId}`)
+        return axios.get(`https://brainflix2022api.netlify.app/home/${firstVideoId}`)
       })
       .then ((firstVideoData) => {
         this.setState({
@@ -46,7 +46,7 @@ class HomePage extends React.Component {
     const videoIdToFetch = (currentVideoId) ? currentVideoId : this.state.videoList[0].id
 
     if (prevVideoId !== currentVideoId) {
-      axios.get(`https://brainflix2022api.netlify.app/home/videos/${videoIdToFetch}`)
+      axios.get(`https://brainflix2022api.netlify.app/home/${videoIdToFetch}`)
         .then ((videoData) => {
           this.setState ({
             selectedVideo: videoData.data
