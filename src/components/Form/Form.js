@@ -7,7 +7,7 @@ const Form = (props) => {
         e.preventDefault()
         
         if (e.target[0].value) {
-            axios.post(`https://brainflix2022api.netlify.app/home/videos/${props.video.id}`, {
+            axios.post(`https://brainflix2022api.netlify.app/home/${props.video.id}`, {
                 comment: e.target[0].value
             })
                 .catch((error) => {'error'});

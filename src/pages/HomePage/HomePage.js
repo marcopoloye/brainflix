@@ -57,6 +57,7 @@ class HomePage extends React.Component {
   }
     
   render() {
+
     const filteredVideos = this.state.videoList.filter(video => video.id !== this.state.selectedVideo.id)
 
     const timestamp = this.state.selectedVideo.timestamp;
