@@ -1,0 +1,98 @@
+body {
+  margin: 0 0 1.25rem;
+  font: 0.8125rem "Avenir-Regular";
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+input:focus {
+  outline: 2px solid #0095ff;
+}
+
+input:invalid {
+  outline: 1px solid #d22d2d;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0065ad;
+}
+
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.woff");
+  font-weight: 700;
+}
+.next-video__container {
+  margin: 1rem 1rem 0;
+  display: flex;
+  height: 3.75rem;
+}
+.next-video__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+.next-video__thumbnail {
+  height: 3.75rem;
+  width: 6.25rem;
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1rem;
+  background: #e1e1e1;
+  cursor: pointer;
+}
+.next-video__title {
+  line-height: 1.15rem;
+  font-weight: 700;
+}
+.next-video__link {
+  text-decoration: none;
+  color: #323232;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .next-video__container {
+    margin: 1.5rem 2.25rem 0;
+    max-width: 92%;
+  }
+  .next-video__text .next-video__link {
+    width: 25%;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .next-video__container {
+    margin: 1.5rem 1.5rem 0;
+    max-width: 95%;
+  }
+  .next-video__text .next-video__link {
+    width: 40%;
+    font-size: 0.8125rem;
+  }
+}/*# sourceMappingURL=NextVideo.css.map */

@@ -1,0 +1,182 @@
+body {
+  margin: 0 0 1.25rem;
+  font: 0.8125rem "Avenir-Regular";
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+input:focus {
+  outline: 2px solid #0095ff;
+}
+
+input:invalid {
+  outline: 1px solid #d22d2d;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0065ad;
+}
+
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.woff");
+  font-weight: 700;
+}
+.upload-section {
+  padding: 1.5rem 1rem 1rem;
+  border-top: 1px #e1e1e1 solid;
+}
+.upload-section__heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.upload-section__subheading {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #afafaf;
+  margin-bottom: 0.25rem;
+}
+.upload-section__thumbnail {
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+.upload-section__input, .upload-section__input-two {
+  padding: 0.6rem;
+  background: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.upload-section__input-two {
+  padding: 0.6rem 0.6rem 3.5rem;
+  margin-bottom: 1.25rem;
+}
+.upload-section ::-moz-placeholder {
+  color: black;
+  font: 0.75rem "Avenir-Regular";
+}
+.upload-section :-ms-input-placeholder {
+  color: black;
+  font: 0.75rem "Avenir-Regular";
+}
+.upload-section ::placeholder {
+  color: black;
+  font: 0.75rem "Avenir-Regular";
+}
+.upload-section__form {
+  display: flex;
+  flex-direction: column;
+}
+.upload-section__button {
+  color: white;
+  width: 100%;
+  background: #0095ff url("../../assets/icons/publish.svg") no-repeat 3% 50%;
+  background-size: 1.25rem;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 0.65rem 0;
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+.upload-section__button-link {
+  text-decoration: none;
+}
+.upload-section__cancel {
+  text-transform: uppercase;
+  text-align: center;
+  color: #0095ff;
+  font-weight: 800;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.upload-section__cancel-link {
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .upload-section {
+    padding: 2.25rem 2.25rem 0.5rem;
+  }
+  .upload-section__heading {
+    font-family: "Avenir-Bold";
+    font-size: 2rem;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px #e1e1e1 solid;
+  }
+  .upload-section__thumbnail {
+    border-radius: 4px;
+    width: 50%;
+  }
+  .upload-section__thumbnail-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .upload-section__button-link {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-top: 1px #e1e1e1 solid;
+    padding-top: 1rem;
+  }
+  .upload-section__button {
+    width: 20%;
+    margin: 0 0 0 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .upload-section {
+    padding: 2.25rem 8.75rem 0.5rem 8rem;
+  }
+  .upload-section__thumbnail {
+    border-radius: 4px;
+    width: 348px;
+    margin-bottom: 2rem;
+  }
+  .upload-section__form {
+    flex-grow: 1;
+    padding-left: 1.5rem;
+  }
+  .upload-section__content-box {
+    display: flex;
+  }
+  .upload-section__button {
+    width: 13%;
+    margin: 0 0 0 4rem;
+  }
+  .upload-section__button-link {
+    padding-top: 1.5rem;
+  }
+  .upload-section__input {
+    margin-bottom: 2rem;
+    padding: 0.75rem;
+  }
+  .upload-section__input-two {
+    padding: 0.6rem 0.6rem 4.25rem;
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=UploadForm.css.map */

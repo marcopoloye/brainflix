@@ -1,0 +1,58 @@
+body {
+  margin: 0 0 1.25rem;
+  font: 0.8125rem "Avenir-Regular";
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+input:focus {
+  outline: 2px solid #0095ff;
+}
+
+input:invalid {
+  outline: 1px solid #d22d2d;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0065ad;
+}
+
+.main-video {
+  max-width: 320px;
+  max-height: 179px;
+}
+@media screen and (min-width: 768px) {
+  .main-video {
+    max-width: 696px;
+    max-height: 390px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-video {
+    max-width: 850px;
+    max-height: 475px;
+  }
+}
+
+.main-video__container {
+  background: black;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=MainVideo.css.map */

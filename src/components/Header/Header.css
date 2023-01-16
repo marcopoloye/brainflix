@@ -1,0 +1,154 @@
+body {
+  margin: 0 0 1.25rem;
+  font: 0.8125rem "Avenir-Regular";
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+input:focus {
+  outline: 2px solid #0095ff;
+}
+
+input:invalid {
+  outline: 1px solid #d22d2d;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0065ad;
+}
+
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.woff");
+  font-weight: 700;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.header__logo {
+  margin: 0 auto;
+  height: 25px;
+  width: 120px;
+  cursor: pointer;
+}
+.header__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header__search-bar {
+  flex-grow: 1;
+  padding: 0.6rem 0 0.6rem 2rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  margin: 1rem 0;
+  background: #fafafa url("../../assets/icons/search.svg") no-repeat 0.6rem;
+  background-size: 1rem;
+}
+.header__search ::-moz-placeholder {
+  color: black;
+  font: 0.75rem "Avenir-Regular";
+}
+.header__search :-ms-input-placeholder {
+  color: black;
+  font: 0.75rem "Avenir-Regular";
+}
+.header__search ::placeholder {
+  color: black;
+  font: 0.75rem "Avenir-Regular";
+}
+.header__avatar {
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 50%;
+  border-radius: 50%;
+  background: #e1e1e1 url("../../assets/images/Mohan-muruge.jpg");
+  background-size: cover;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.header__button {
+  color: white;
+  width: 100%;
+  background: #0095ff url("../../assets/icons/upload.svg") no-repeat 3% 50%;
+  background-size: 1.25rem;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 0.65rem 0;
+  font-size: 0.75rem;
+}
+.header__button-link {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.25rem 2.25rem;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__search {
+    flex-wrap: nowrap;
+    width: 30rem;
+  }
+  .header__search-bar {
+    margin: 0;
+    flex-grow: 0;
+    width: 13.5rem;
+    padding: 0.7rem 0 0.7rem 2rem;
+  }
+  .header__avatar {
+    order: 2;
+    margin: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .header__button, .header__button-link {
+    width: 9.5rem;
+    padding: 0.75rem 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    margin: 0.25rem 8.75rem 0.25rem 8rem;
+  }
+  .header__search {
+    width: 31.5rem;
+  }
+  .header__avatar {
+    margin-left: 1rem;
+  }
+  .header__button {
+    width: 9.5rem;
+    padding: 0.75rem 0;
+  }
+}/*# sourceMappingURL=Header.css.map */

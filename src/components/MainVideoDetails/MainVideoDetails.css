@@ -1,0 +1,145 @@
+body {
+  margin: 0 0 1.25rem;
+  font: 0.8125rem "Avenir-Regular";
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+input:focus {
+  outline: 2px solid #0095ff;
+}
+
+input:invalid {
+  outline: 1px solid #d22d2d;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0065ad;
+}
+
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.woff");
+  font-weight: 700;
+}
+.main-video-details__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1.5rem 0 1rem;
+}
+.main-video-details__container {
+  margin: 0 1rem;
+}
+.main-video-details__stats {
+  display: flex;
+  padding: 1rem 0 0;
+  border-top: 1px #e1e1e1 solid;
+  border-bottom: 1px #e1e1e1 solid;
+}
+.main-video-details__channel-date {
+  margin-right: 5rem;
+}
+.main-video-details__channel {
+  font-weight: 700;
+  padding-bottom: 0.9rem;
+}
+.main-video-details__icon-heart {
+  width: 20%;
+  padding-right: 0.5rem;
+}
+.main-video-details__icon-views {
+  width: 25%;
+  padding-right: 0.5rem;
+}
+.main-video-details__likes, .main-video-details__views {
+  display: flex;
+  align-items: center;
+  color: #afafaf;
+}
+.main-video-details__likes {
+  background: url(../../assets/icons/likes.svg) no-repeat;
+  background-size: 1rem;
+  padding-left: 1.5rem;
+}
+.main-video-details__views {
+  background: url(../../assets/icons/views.svg) no-repeat;
+  background-size: 1.35rem;
+  padding: 0 0 0.9rem 1.7rem;
+}
+.main-video-details__date {
+  color: #afafaf;
+  padding-bottom: 0.75rem;
+}
+.main-video-details__description {
+  padding: 1rem 0;
+  font-size: 0.8125rem;
+  line-height: 1.15rem;
+}
+@media screen and (min-width: 768px) {
+  .main-video-details__container {
+    margin: 0 2.25rem;
+  }
+  .main-video-details__title {
+    font: 2.05rem "Avenir-Bold";
+    line-height: 2rem;
+    padding: 2.25rem 0 1.5rem;
+  }
+  .main-video-details__stats {
+    border-top: none;
+    padding: 0 0 0.75rem;
+    justify-content: space-between;
+  }
+  .main-video-details__channel-date, .main-video-details__views-likes {
+    display: flex;
+  }
+  .main-video-details__views, .main-video-details__likes, .main-video-details__channel, .main-video-details__date {
+    padding-bottom: 0rem;
+  }
+  .main-video-details__channel, .main-video-details__views {
+    padding-right: 2rem;
+  }
+  .main-video-details__channel {
+    font-family: "Avenir-Bold";
+  }
+  .main-video-details__description {
+    font-size: 0.875rem;
+    padding: 1.25rem 0 2rem;
+    line-height: 1.375rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-video-details__container {
+    margin: 0 0 0 8rem;
+  }
+  .main-video-details__stats {
+    border-top: none;
+    padding: 0 1.5rem 0.75rem 0;
+    justify-content: space-between;
+  }
+  .main-video-details__description {
+    padding: 1.25rem 1.3rem 2rem 0;
+    line-height: 1.375rem;
+  }
+}/*# sourceMappingURL=MainVideoDetails.css.map */

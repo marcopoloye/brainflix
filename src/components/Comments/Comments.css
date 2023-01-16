@@ -1,0 +1,113 @@
+body {
+  margin: 0 0 1.25rem;
+  font: 0.8125rem "Avenir-Regular";
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+input:focus {
+  outline: 2px solid #0095ff;
+}
+
+input:invalid {
+  outline: 1px solid #d22d2d;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0065ad;
+}
+
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.woff");
+  font-weight: 700;
+}
+.comments {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  font-size: 0.8125rem;
+  border-bottom: 1px #e1e1e1 solid;
+}
+.comments__avatar {
+  margin: 0.75rem 0 0;
+  height: 2.25rem;
+  width: 2.25rem;
+  border-radius: 50%;
+  background: #e1e1e1;
+  background-size: cover;
+  cursor: pointer;
+}
+.comments__text-container {
+  width: 82%;
+}
+.comments__name-date {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0 0.5rem;
+}
+.comments__name {
+  font-weight: 700;
+}
+.comments__date {
+  color: #afafaf;
+}
+.comments__comment {
+  padding-bottom: 0.5rem;
+  line-height: 1.15rem;
+}
+@media screen and (min-width: 768px) {
+  .comments {
+    margin: 0 2.25rem;
+  }
+  .comments__avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1.5rem 0 0;
+  }
+  .comments__text-container {
+    width: 91%;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .comments__name-date {
+    padding: 1.5rem 0 0.25rem;
+  }
+  .comments__comment {
+    padding-bottom: 1.25rem;
+    line-height: 1.375rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments {
+    margin: 0 0 0 8rem;
+    border-top: 1px #e1e1e1 solid;
+    border-bottom: none;
+    padding-right: 1.5rem;
+  }
+  .comments__comment {
+    padding-right: 2rem;
+  }
+}/*# sourceMappingURL=Comments.css.map */

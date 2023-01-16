@@ -1,0 +1,63 @@
+body {
+  margin: 0 0 1.25rem;
+  font: 0.8125rem "Avenir-Regular";
+  color: #323232;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 0.875rem;
+    margin: 0;
+  }
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+input:focus {
+  outline: 2px solid #0095ff;
+}
+
+input:invalid {
+  outline: 1px solid #d22d2d;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0065ad;
+}
+
+@font-face {
+  font-family: "Avenir-Regular";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.woff");
+  font-weight: 700;
+}
+.next-video__heading {
+  text-transform: uppercase;
+  color: #afafaf;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 1rem 0 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .next-video__heading {
+    margin: 1.5rem 0 1.5rem 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .next-video__heading {
+    margin: 2.25rem 0 1.5rem 1.5rem;
+  }
+}/*# sourceMappingURL=NextVideoHeading.css.map */
