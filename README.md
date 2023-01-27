@@ -2,7 +2,7 @@
 
 A mock video streaming platform with video uploading and commenting capabilities
 
-https://brainflix-2022.herokuapp.com/
+https://brainflix2022.netlify.app/
 
 ### Screenshots
 #### Landing page:
